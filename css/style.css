@@ -1,0 +1,158 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    margin-left: 9px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #4ea1ff; /* Color de fondo similar al de la imagen */
+    border-radius: 2px; /* Bordes redondeados */
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 750px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 15px;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#cart-icon, #cart-icon2 {
+    cursor: pointer;
+}
+
+.navbar-nav .nav-item.ms-4 {
+    margin-left: auto;
+}
+
+/* Ajustes adicionales para el tamaño y posición del login */
+#cart-icon2 img {
+    margin-left: 20px;
+}
+
+/* Estilos para el slider */
+.carousel-inner img {
+    max-height: 400px; /* Altura máxima del slider */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente en los controles */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Reduce el tamaño de los controles de navegación */
+}
+
+#about-us {
+    background-color: #5892e5;
+    border-radius: 10px;
+    color: white;
+    padding: 40px;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    color: black;
+    text-decoration: underline 1px;
+}
+
+#about-us .about-text {
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#about-us img {
+    max-width: 230px;
+    border-radius: 12px;
+}
+
+.product-card .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(55, 158, 255, 0.575);
+    transition: transform 0.3s;
+}
+
+.product-card .card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-height: 180px;
+    object-fit: contain;
+}
+
+.product-card .card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.product-card .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card .card-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .btn {
+    background-color: #5087ff;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #006eff;
+}
+
+footer {
+    padding: 140px;
+    background-color: #243250;
+    color: #fff;
+}
+
+#search-input{
+    border: 1px;
+    border-radius: 3rem !important;
+}
