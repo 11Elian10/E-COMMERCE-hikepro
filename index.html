@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Sitio Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        .carousel-item {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        .carousel-caption h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .carousel-caption p {
+            font-size: 1.2rem;
+        }
+
+        .carousel-caption .btn {
+            background-color: #e60000;
+            border: none;
+        }
+
+        /* Sección de Sobre Nosotros */
+        .about-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Sección de Reseñas */
+        .reviews-section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .reviews-section .review-item {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar permanece sin cambios -->
+
+    <!-- Slider (Carousel de Bootstrap) -->
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            <!-- Imagen 1 -->
+            <div class="carousel-item active" style="background-image: url('imagen1.jpg');">
+                <div class="carousel-caption">
+                    <h1>Challenge Your Paradigm</h1>
+                    <p>In order to grow, one must be willing to step out of their comfort zone and face challenges head-on.</p>
+                    <a href="#" class="btn btn-primary">Unleash Your Inner Warrior</a>
+                </div>
+            </div>
+            <!-- Imagen 2 -->
+            <div class="carousel-item" style="background-image: url('imagen2.jpg');">
+                <div class="carousel-caption">
+                    <h1>Embrace the Unknown</h1>
+                    <p>True growth comes from exploring beyond what is familiar.</p>
+                    <a href="#" class="btn btn-primary">Explore Now</a>
+                </div>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="carousel-item" style="background-image: url('imagen3.jpg');">
+                <div class="carousel-caption">
+                    <h1>Conquer Your Fears</h1>
+                    <p>Face your fears head-on to unlock your full potential.</p>
+                    <a href="#" class="btn btn-primary">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles del Carousel -->
+        <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- Sobre Nosotros -->
+    <section class="about-section text-center">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una compañía dedicada a...</p>
+        </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section class="reviews-section text-center">
+        <div class="container">
+            <h2>Reseñas</h2>
+            <div class="row">
+                <div class="col-md-4 review-item">
+                    <p>"¡Increíble experiencia! Me encantó el enfoque en el crecimiento personal."</p>
+                    <p><strong>- Juan Pérez</strong></p>
+                </div>
+                <div class="col-md-4 review-item">
+                    <p>"Un servicio excepcional y motivador."</p>
+                    <p><strong>- María García</strong></p>
+                </div>
+                <div class="col-md-4 review-item">
+                    <p>"Definitivamente recomiendo a todos unirse a este viaje."</p>
+                    <p><strong>- Carlos López</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
