@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    }
+
+h1 {
+    margin: 0;
+    margin-left: 9px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #4ea1ff; /* Color de fondo similar al de la imagen */
+    border-radius: 2px; /* Bordes redondeados */
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 750px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 15px;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    background-color: #3488e9;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+#cart-icon, #cart-icon2 {
+    cursor: pointer;
+}
+
+.navbar-nav .nav-item.ms-4 {
+    margin-left: auto;
+}
+
+/* Ajustes adicionales para el tamaño y posición del login */
+#cart-icon2 img {
+    margin-left: 20px;
+}
+
+/* Slider en pantalla completa */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Reduce la altura para que esté más abajo */
+    margin-top: 20px; /* Espacio superior para separarlo del borde */
+}
+
+@media (max-width: 768px) {
+    #slider {
+        height: 70vh; /* Ajusta el tamaño del slider en pantallas pequeñas */
+        margin-top: 15px;
+    }
+}
+
+/* Estilos de la leyenda de cada imagen */
+.caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0)!important;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.caption h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: white !important;
+}
+
+.caption p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* Sección de Sobre Nosotros */
+.about-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Sección de Reseñas */
+.reviews-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.reviews-section .review-item {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    color: black;
+    text-decoration: underline 1px;
+}
+
+#about-us .about-text {
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#about-us img {
+    max-width: 230px;
+    border-radius: 12px;
+}
+
+.product-card .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(55, 158, 255, 0.575);
+    transition: transform 0.3s;
+}
+
+.product-card .card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-height: 180px;
+    object-fit: contain;
+}
+
+.product-card .card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.product-card .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card .card-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .btn {
+    background-color: #5087ff;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #006eff;
+}
+
+footer {
+    padding: 140px;
+    background-color: #243250;
+    color: #fff;
+}
+
+#products-container {
+    margin-top: 20px; /* Espacio entre el buscador y los productos */
+}
+
+/* Estilo de la caja de búsqueda */
+.caja {
+    display: flex; /* Usa Flexbox para alinear el contenido dentro de la caja */
+    align-items: center; /* Centra verticalmente los elementos dentro de la caja */
+    background-color: #55a2faf1;
+    border-radius: 3rem; /* Bordes redondeados */
+    padding: 0.4rem; /* Espacio interior de 0.5 rem */
+    width: 3rem; /* Ancho inicial de 3 rem */
+    height: 2.9rem; /* Altura de 3 rem */
+    overflow: hidden; /* Esconde el desbordamiento de contenido */
+    transition: width 0.6s ease-in-out; /* Transición suave de 0.3 segundos para el ancho */
+}
+
+/* Estilo del campo de búsqueda */
+.buscar {
+    background: none; /* Sin fondo */
+    outline: none; /* Sin borde de enfoque */
+    border: none; /* Sin borde */
+    color: #ffffff; /* Color del texto */
+    font-size: 1rem; /* Tamaño de fuente de 1 rem */
+    width: 0; /* Ancho inicial de 0 */
+    padding: 0; /* Sin padding */
+    transition: width 0.1s ease-in-out; /* Transición suave de 0.3 segundos para el ancho */
+    margin-left: 1rem; /* Margen izquierdo de 1 rem */
+    flex-grow: 1; /* Hace que el campo crezca para ocupar el espacio disponible */
+    min-width: 0; /* Establece un ancho mínimo de 0 */
+    font-weight: bold;
+}
+
+.buscar::placeholder{
+    color: #ffffff;
+}
+
+/* Estilo del botón de búsqueda */
+.boton {
+    border: none; /* Sin borde */
+    background-color: transparent; /* Fondo transparente */
+    color: #ffffff; /* Color del icono */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+    font-size: 1.5rem; /* Tamaño de fuente para el icono */
+    transition: color 0.3s ease-in-out; /* Transición para el color */
+}
+
+/* Cambios cuando se pasa el cursor sobre la caja */
+.caja:hover {
+    width: 50%; /* Expande la caja para ocupar todo el ancho disponible */
+    padding-left: 1rem; /* Agrega un padding izquierdo de 1 rem */
+    background-color: #4ea1ff;
+}
+
+/* Cambios en el campo de búsqueda cuando se pasa el cursor sobre la caja */
+.caja:hover .buscar {
+    width: 100%; /* Expande el campo de búsqueda para ocupar todo el ancho disponible */
+    padding-left: 0.1rem; /* Agrega un padding izquierdo de 1 rem */
+}
+
+/* Cambios en el botón de búsqueda cuando se pasa el cursor sobre la caja */
+.caja:hover .boton {
+    color: rgb(255, 255, 255); /* Cambia el color del icono a blanco */
+}
+
+/* Chat BOT API*/
+
+/* Botón flotante para abrir el chat */
+#chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #3d8bff; /* Verde de WhatsApp */
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#chatbot-button i {
+    color: white;
+    font-size: 24px;
+}
+
+#chatbot-button:hover {
+    transform: scale(1.1);
+}
+
+/* Contenedor del chatbot */
+#chatbot-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background-color: #f1f3f6;
+    border-radius: 25px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+}
+
+/* Header del chatbot */
+#chatbot-header {
+    background-color: #3686ff; /* Verde oscuro de WhatsApp */
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatbot-header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#chatbot-header h5 {
+    margin-left: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+#chatbot-header .fa-times {
+    cursor: pointer;
+}
+
+/* Cuerpo del chatbot */
+#chatbot-body {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo claro translúcido */
+    backdrop-filter: blur(15px); /* Blur dentro del chat */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.message.bot {
+    justify-content: flex-start;
+}
+
+.message p {
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 220px;
+    word-wrap: break-word;
+}
+
+.message.user p {
+    background-color: #4ea1ff; /* Verde claro de WhatsApp */
+    color: white;
+}
+
+.message.bot p {
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrusel de preguntas */
+#chatbot-questions-container {
+    position: relative;
+    background-color: #f1f3f6;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#chatbot-questions {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#chatbot-questions button {
+    background-color: #369eff; /* Verde oscuro de WhatsApp */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+#chatbot-questions button:hover {
+    background-color: #3488e9; /* Azul claro */
+}
+
+/* Botones de desplazamiento */
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.scroll-left {
+    left: 5px;
+}
+
+.scroll-right {
+    right: 5px;
+}
