@@ -37,15 +37,25 @@ Antes de comenzar, asegúrate de tener instalado:
 El proyecto está organizado de la siguiente manera:
 
 •	• css/: Archivos de estilos CSS.
+
 •	• img/: Recursos gráficos e imágenes del sitio.
+
 •	• js/: Scripts JavaScript para funcionalidades dinámicas.
+
 •	• index.php: Página principal de la tienda.
+
 •	• carrito.php: Página del carrito de compras.
+
 •	• db.php: Configuración de la base de datos.
+
 •	• login.php: Inicio de sesión.
+
 •	• register.php: Registro de usuarios.
+
 •	• dashboard.php: Panel de administración.
+
 •	• hikeproshop_db.sql: Script para configurar la base de datos.
+
 🤝 Colaboradores
 
 Este proyecto fue desarrollado por:
