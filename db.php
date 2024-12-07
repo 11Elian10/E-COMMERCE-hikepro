@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";  // Tu usuario de MySQL
-$password = "Elianp8765";  // Tu contraseña de MySQL
+$password = "";  // Tu contraseña de MySQL
 $dbname = "hikeproshop_db";
 
 // Crear conexión
